@@ -1086,8 +1086,7 @@ justify-content: left;    background-color: #000018;
     width: 400px !important;
     height: 100px !important;
 }
-#tre{
-}
+
 .projtitle{
     display: flex;
     flex-direction: row-reverse;
