@@ -252,19 +252,19 @@ let icon = document.querySelector(".fa-solid")
     prog33: function(){
     // sopace
     space3.classList.toggle('prog11')
-    space2.classList.add('prog11')
-    space1.classList.add('prog11')
-    space4.classList.add('prog11')
-    space5.classList.add('prog11')
-    space6.classList.add('prog11')
+    space2.classList.remove('prog11')
+    space1.classList.remove('prog11')
+    space4.classList.remove('prog11')
+    space5.classList.remove('prog11')
+    space6.classList.remove('prog11')
 
     //qr
     qr5.classList.toggle('prog1')
-    qr3.classList.remove('prog1')
-    qr4.classList.remove('prog1')
-    qr6.classList.remove('prog1')
-    qr7.classList.remove('prog1')
-    qr8.classList.remove('prog1')
+    qr3.classList.add('prog1')
+    qr4.classList.add('prog1')
+    qr6.classList.add('prog1')
+    qr7.classList.add('prog1')
+    qr8.classList.add('prog1')
    //audio remove
    audio9.classList.add('audioshow')
    audio8.classList.remove('audioshow')
@@ -970,6 +970,7 @@ const music5 = new Audio('vande.mp3');
 const music6 = new Audio('vande.mp3');
 const music7 = new Audio('vande.mp3');
 const music8 = new Audio('vande.mp3');
+const music9 = new Audio('vande.mp3');
 
 
 // create Array 
@@ -981,6 +982,7 @@ let masterPlay4 = document.getElementById('masterPlay4');
 let masterPlay5 = document.getElementById('masterPlay5');
 let masterPlay6 = document.getElementById('masterPlay6');
 let masterPlay7 = document.getElementById('masterPlay7');
+let masterPlay8 = document.getElementById('masterPlay8');
 
 let wave = document.getElementsByClassName('wave')[0]; //موجات
 // play and puse music audio 1
@@ -1100,6 +1102,22 @@ masterPlay7.addEventListener('click',function(){
   }
 } )
 
+// play and puse music audio 8
+
+
+masterPlay8.addEventListener('click',function(){
+  if (music9.paused || music9.currentTime <=0) {
+      music9.play();
+      masterPlay8.classList.remove('bi-play-fill');
+      masterPlay8.classList.add('bi-pause-fill');
+      wave.classList.add('active2');
+  } else {
+      music9.pause();
+      masterPlay8.classList.add('bi-play-fill');
+      masterPlay8.classList.remove('bi-pause-fill');
+      wave.classList.remove('active2');
+  }
+} )
 
 let currentStart = document.getElementById('currentStart');
 let currentStart1 = document.getElementById('currentStart1');
@@ -1109,6 +1127,7 @@ let currentStart4 = document.getElementById('currentStart4');
 let currentStart5 = document.getElementById('currentStart5');
 let currentStart6 = document.getElementById('currentStart6');
 let currentStart7 = document.getElementById('currentStart7');
+let currentStart8 = document.getElementById('currentStart8');
 
 
 let currentEnd = document.getElementById('currentEnd');
@@ -1119,6 +1138,7 @@ let currentEnd4 = document.getElementById('currentEnd4');
 let currentEnd5 = document.getElementById('currentEnd5');
 let currentEnd6 = document.getElementById('currentEnd6');
 let currentEnd7 = document.getElementById('currentEnd7');
+let currentEnd8 = document.getElementById('currentEnd8');
 
 
 
@@ -1130,6 +1150,7 @@ let seek4 = document.getElementById('seek4');
 let seek5 = document.getElementById('seek5');
 let seek6 = document.getElementById('seek6');
 let seek7 = document.getElementById('seek7');
+let seek8 = document.getElementById('seek8');
 
 
 let bar2 = document.getElementById('bar2');
@@ -1140,6 +1161,7 @@ let bar6 = document.getElementById('bar6');
 let bar7 = document.getElementById('bar7');
 let bar8 = document.getElementById('bar8');
 let bar9 = document.getElementById('bar9');
+let bar10 = document.getElementById('bar10');
 
 
 let dot = document.getElementsByClassName('dot')[0];
@@ -1150,6 +1172,7 @@ let dot4 = document.getElementsByClassName('dot4')[0];
 let dot5 = document.getElementsByClassName('dot5')[0];
 let dot6 = document.getElementsByClassName('dot6')[0];
 let dot7 = document.getElementsByClassName('dot7')[0];
+let dot8 = document.getElementsByClassName('dot8')[0];
 
 
 music.addEventListener('timeupdate',()=>{
@@ -1241,23 +1264,25 @@ seek2.addEventListener('change', ()=>{
 })
 
 seek3.addEventListener('change', ()=>{
-  music4.currentTime = seek3.value * music3.duration/100;
+  music4.currentTime = seek3.value * music4.duration/100;
 })
 seek4.addEventListener('change', ()=>{
-  music5.currentTime = seek4.value * music3.duration/100;
+  music5.currentTime = seek4.value * music5.duration/100;
 })
 seek5.addEventListener('change', ()=>{
-  music6.currentTime = seek5.value * music3.duration/100;
+  music6.currentTime = seek5.value * music6.duration/100;
 })
 seek6.addEventListener('change', ()=>{
-  music7.currentTime = seek6.value * music3.duration/100;
+  music7.currentTime = seek6.value * music7.duration/100;
 })
+
+
 seek7.addEventListener('change', ()=>{
-  music8.currentTime = seek7.value * music3.duration/100;
+  music8.currentTime = seek7.value * music8.duration/100;
 })
-
-
-
+seek8.addEventListener('change', ()=>{
+  music9.currentTime = seek8.value * music9.duration/100;
+})
 music4.addEventListener('timeupdate',()=>{
   let music_curr = music4.currentTime;
   let music_dur = music4.duration;
@@ -1276,7 +1301,7 @@ music4.addEventListener('timeupdate',()=>{
   }
   currentStart3.innerText = `${min1}:${sec1}`;
 
-  let progressbar = parseInt((music4.currentTime/music3.duration)*100);
+  let progressbar = parseInt((music4.currentTime/music4.duration)*100);
   seek3.value = progressbar;
   let seekbar = seek3.value;
   bar5.style.width = `${seekbar}%`;
@@ -1301,7 +1326,7 @@ music5.addEventListener('timeupdate',()=>{
   }
   currentStart4.innerText = `${min1}:${sec1}`;
 
-  let progressbar = parseInt((music4.currentTime/music3.duration)*100);
+  let progressbar = parseInt((music5.currentTime/music5.duration)*100);
   seek4.value = progressbar;
   let seekbar = seek4.value;
   bar6.style.width = `${seekbar}%`;
@@ -1325,7 +1350,7 @@ music6.addEventListener('timeupdate',()=>{
   }
   currentStart5.innerText = `${min1}:${sec1}`;
 
-  let progressbar = parseInt((music4.currentTime/music3.duration)*100);
+  let progressbar = parseInt((music6.currentTime/music6.duration)*100);
   seek5.value = progressbar;
   let seekbar = seek5.value;
   bar7.style.width = `${seekbar}%`;
@@ -1350,7 +1375,7 @@ music7.addEventListener('timeupdate',()=>{
   }
   currentStart6.innerText = `${min1}:${sec1}`;
 
-  let progressbar = parseInt((music4.currentTime/music3.duration)*100);
+  let progressbar = parseInt((music7.currentTime/music7.duration)*100);
   seek6.value = progressbar;
   let seekbar = seek6.value;
   bar8.style.width = `${seekbar}%`;
@@ -1377,11 +1402,38 @@ music8.addEventListener('timeupdate',()=>{
   }
   currentStart7.innerText = `${min1}:${sec1}`;
 
-  let progressbar = parseInt((music4.currentTime/music3.duration)*100);
+  let progressbar = parseInt((music8.currentTime/music8.duration)*100);
   seek7.value = progressbar;
   let seekbar = seek7.value;
   bar9.style.width = `${seekbar}%`;
   dot7.style.left = `${seekbar}%`;
+})
+
+
+
+music9.addEventListener('timeupdate',()=>{
+  let music_curr = music8.currentTime;
+  let music_dur = music8.duration;
+
+  let min = Math.floor(music_dur/60);
+  let sec = Math.floor(music_dur%60);
+  if (sec<10) {
+      sec = `0${sec}`
+  }
+  currentEnd8.innerText = `${min}:${sec}`;
+
+  let min1 = Math.floor(music_curr/60);
+  let sec1 = Math.floor(music_curr%60);
+  if (sec1<10) {
+      sec1 = `0${sec1}`
+  }
+  currentStart8.innerText = `${min1}:${sec1}`;
+
+  let progressbar = parseInt((music9.currentTime/music9.duration)*100);
+  seek8.value = progressbar;
+  let seekbar = seek8.value;
+  bar10.style.width = `${seekbar}%`;
+  dot8.style.left = `${seekbar}%`;
 })
 // vol
 let vol_icon = document.getElementById('vol_icon');
@@ -1433,6 +1485,11 @@ let vol8 = document.getElementById('vol8');
 let vol_dot8 = document.getElementById('vol_dot8');
 let vol_bar8 = document.getElementsByClassName('vol_bar8')[0];
 
+//vol9  
+let vol_icon9 = document.getElementById('vol_icon9');
+let vol9 = document.getElementById('vol9');
+let vol_dot9 = document.getElementById('vol_dot9');
+let vol_bar9 = document.getElementsByClassName('vol_bar9')[0];
 vol.addEventListener('change', ()=>{
     if (vol.value == 0) {
         vol_icon.classList.remove('bi-volume-down-fill');
@@ -1505,29 +1562,6 @@ vol2.addEventListener('change', ()=>{
 
 
 
-vol2.addEventListener('change', ()=>{
-  if (vol2.value == 0) {
-      vol_icon2.classList.remove('bi-volume-down-fill');
-      vol_icon2.classList.add('bi-volume-mute-fill');
-      vol_icon2.classList.remove('bi-volume-up-fill');
-  }
-  if (vol2.value > 0) {
-      vol_icon2.classList.add('bi-volume-down-fill');
-      vol_icon2.classList.remove('bi-volume-mute-fill');
-      vol_icon2.classList.remove('bi-volume-up-fill');
-  }
-  if (vol2.value > 50) {
-      vol_icon2.classList.remove('bi-volume-down-fill');
-      vol_icon2.classList.remove('bi-volume-mute-fill');
-      vol_icon2.classList.add('bi-volume-up-fill');
-  }
-
-  let vol_a = vol2.value;
-  vol_bar2.style.width = `${vol_a}%`;
-  vol_dot2.style.left = `${vol_a}%`;
-  music4.volume = vol_a/100;
-})
-
 vol3.addEventListener('change', ()=>{
   if (vol3.value == 0) {
       vol_icon3.classList.remove('bi-volume-down-fill');
@@ -1548,7 +1582,7 @@ vol3.addEventListener('change', ()=>{
   let vol_a = vol3.value;
   vol_bar3.style.width = `${vol_a}%`;
   vol_dot3.style.left = `${vol_a}%`;
-  music5.volume = vol_a/100;
+  music4.volume = vol_a/100;
 })
 
 vol4.addEventListener('change', ()=>{
@@ -1571,7 +1605,7 @@ vol4.addEventListener('change', ()=>{
   let vol_a = vol4.value;
   vol_bar4.style.width = `${vol_a}%`;
   vol_dot4.style.left = `${vol_a}%`;
-  music6.volume = vol_a/100;
+  music5.volume = vol_a/100;
 })
 
 vol5.addEventListener('change', ()=>{
@@ -1594,7 +1628,7 @@ vol5.addEventListener('change', ()=>{
   let vol_a = vol5.value;
   vol_bar5.style.width = `${vol_a}%`;
   vol_dot5.style.left = `${vol_a}%`;
-  music7.volume = vol_a/100;
+  music6.volume = vol_a/100;
 })
 
 
@@ -1618,6 +1652,51 @@ vol6.addEventListener('change', ()=>{
   let vol_a = vol6.value;
   vol_bar6.style.width = `${vol_a}%`;
   vol_dot6.style.left = `${vol_a}%`;
-  music8.volume = vol_a/100;
+  music7.volume = vol_a/100;
 })
 
+
+vol7.addEventListener('change', ()=>{
+  if (vol7.value == 0) {
+      vol_icon7.classList.remove('bi-volume-down-fill');
+      vol_icon7.classList.add('bi-volume-mute-fill');
+      vol_icon7.classList.remove('bi-volume-up-fill');
+  }
+  if (vol7.value > 0) {
+      vol_icon7.classList.add('bi-volume-down-fill');
+      vol_icon7.classList.remove('bi-volume-mute-fill');
+      vol_icon7.classList.remove('bi-volume-up-fill');
+  }
+  if (vol7.value > 50) {
+      vol_icon7.classList.remove('bi-volume-down-fill');
+      vol_icon7.classList.remove('bi-volume-mute-fill');
+      vol_icon7.classList.add('bi-volume-up-fill');
+  }
+
+  let vol_a = vol7.value;
+  vol_bar7.style.width = `${vol_a}%`;
+  vol_dot7.style.left = `${vol_a}%`;
+  music8.volume = vol_a/100;
+})
+vol8.addEventListener('change', ()=>{
+  if (vol8.value == 0) {
+      vol_icon8.classList.remove('bi-volume-down-fill');
+      vol_icon8.classList.add('bi-volume-mute-fill');
+      vol_icon8.classList.remove('bi-volume-up-fill');
+  }
+  if (vol8.value > 0) {
+      vol_icon8.classList.add('bi-volume-down-fill');
+      vol_icon8.classList.remove('bi-volume-mute-fill');
+      vol_icon8.classList.remove('bi-volume-up-fill');
+  }
+  if (vol8.value > 50) {
+      vol_icon8.classList.remove('bi-volume-down-fill');
+      vol_icon8.classList.remove('bi-volume-mute-fill');
+      vol_icon8.classList.add('bi-volume-up-fill');
+  }
+
+  let vol_a = vol8.value;
+  vol_bar8.style.width = `${vol_a}%`;
+  vol_dot8.style.left = `${vol_a}%`;
+  music9.volume = vol_a/100;
+})

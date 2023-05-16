@@ -27,7 +27,7 @@
     width: 100%;
     display: flex;
     height: 60px;
-    background-color: blue;
+    background-color: var(--thcolor);
 
     padding-top: 3px;
     padding-left: 6%;
@@ -115,7 +115,7 @@ nav .animation {
 .animation4 {
     width: 140px;
     left: 440px;
-    background-color: #26ff00;
+    background-color: var(--scolor);
 }
 
 
@@ -237,9 +237,9 @@ nav .animation {
 
 }
 
-.eminfo h2 {
-    color: var(--firstcolor);
-    font-size: 30px;
+.eminfo h1 {
+    color: var(--thcolor);
+    font-size: 28px;
     margin: 20px 0px 40px 10px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -250,6 +250,7 @@ nav .animation {
     color: #000018;
     letter-spacing: 1px;
     line-height: 33px;
+    font-size: 18px;
 }
 
 .emimage {
@@ -281,11 +282,15 @@ nav .animation {
     width: 180px;
     transition: all .9s;
 }
-
+.flexmove{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
 .grMove1 {
-    position: absolute;
-    top: 500px;
-    left: 670px;
+   
     height: 180px;
     width: 180px;
     background-image: url(qrcode.png);
@@ -296,8 +301,8 @@ nav .animation {
 
 .grMove2 {
 
-    height: 100px;
-    width: 100px;
+    height: 160px;
+    width: 160px;
     z-index: 4;
     background-image: url(qrcode1.png);
     background-size: cover;
@@ -306,8 +311,8 @@ nav .animation {
 
 .grMove3 {
     
-    height: 100px;
-    width: 100px;
+    height: 120px;
+    width: 120px;
     z-index: 4;
     /* background-color: #011c68; */
     background-image: url(qrcode1.png);
@@ -391,9 +396,9 @@ section {
 .title {
     display: flex;
     justify-content: center;
-    color: var(--firstcolor);
+    color: var(--thcolor);
     letter-spacing: 1px;
-    font-size: 1.9em;
+    font-size: 29px;
     font-weight: 600;
     margin-bottom: 30px;
 }
@@ -479,9 +484,9 @@ button:hover span {
 }
 
 .tre {
+    width: 400px;
     color: #fff;
-    font-size: 30px;
-    direction: rtl;
+    font-size: 24px;
 }
 
 .btu {
@@ -502,6 +507,7 @@ button:hover span {
 
 .prog11 .projinfo h3 {
     margin-bottom: 40px;
+
 }
 
 .prog11 .projinfo #rr {
@@ -515,7 +521,7 @@ button:hover span {
 }
 
 .prog11 .projinfo p {
-    font-size: 18px;
+    font-size: 18px !important;
     color: #fff;
     filter: drop-shadow(2px 2px 2px black);
 }
@@ -571,33 +577,42 @@ button:hover span {
 
 /* add class pp1 */
 .pp1 {
-    font-size: 20px !important;
+    font-size: 8px !important;
     max-width: 600px;
     display: none;
+    padding-bottom: 7px;
 }
 
 .pp2 {
-    font-size: 20px !important;
+    font-size: 8px !important;
     max-width: 600px;
     display: none;
+    padding-bottom: 7px;
+
 }
 
 .pp3 {
-    font-size: 20px !important;
+    font-size: 8px !important;
     max-width: 600px;
     display: none;
+    padding-bottom: 7px;
+
 }
 
 .pp4 {
-    font-size: 20px !important;
+    font-size: 8px !important;
     max-width: 600px;
     display: none;
+    padding-bottom: 7px;
+
 }
 
 .pp5 {
-    font-size: 20px !important;
+    font-size: 8px !important;
     max-width: 600px;
     display: none;
+    padding-bottom: 7px;
+
 }
 
 .pp6 {
@@ -610,7 +625,6 @@ button:hover span {
     margin-top: 40px;
     filter: drop-shadow(3px 3px 1px #000);
     color: #fff;
-    direction: rtl;
     font-size: 20px !important;
     max-width: 600px;
 }
@@ -618,19 +632,8 @@ button:hover span {
 
 
 
-.cafeteria{
-    height: 400px;
-    width: 100%;
-    overflow-y: hidden;
-    background-color: #000018;
-}
-.cafeteria img{
-    width: 100%;
-    height: 1100px;
-    filter: grayscale(50%);
-    margin-top: -200px;
-}
 .footer{
+    background-color: var(--thcolor);
     height: 100px;
 }
 
@@ -912,12 +915,117 @@ audio::-webkit-media-controls-play-button {
 
 
 
+/* cafeteria */
+
+.cafeteria{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   background-color: var(--scolor);
+}
+.cafcol{
+    background: -webkit-linear-gradient(TOP,rgba(187, 156, 138, 1) 10%, rgba(77, 50, 40, 1) 68%,rgba(77, 50, 40, 1) 100%);
+    width: 100%;
+}
+.container_img{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.canterimg{
+    width: 90%;
+    height: 96%;
+}
+.canterimgg{
+    /* width: 90%;
+    height: 96%; */
+    width: 100%;
+    height: auto;
+    border-radius:  0px 0px 80px 80px;
+}
+.ds{
+    display: flex;
+ justify-content: center;
+ align-items: center;
+    margin: 10px 0px  0px 10px;
+}
+.downslide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   gap: 38px;
+   width: 90%;
+height: 200px;
+}
+.tcaf{
+    max-width: 800px;
+}
+.tcaf h1{
+    font-size: 50px;
+    color: var(--firstcolor);
+}
+.pcaf{
+    max-width: 400px;
+}
+.pcaf p{
+    font-size: 18px;
+    color: var(--scolor);
+
+}
 
 
+.audio13{
+    width: 350px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width:720px)  {
+/*caf*/
+.cafeteria{
+    height: 100%;
+}
+.container_img{
+    
+    height: 200px;
+}
+.canterimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.canterimgg{
+    width: 320px;
+    height: 150px;
+}
+.ds{
+    display: flex;
+}
+.downslide{   
+    display: block;
+}
+.tcaf{
+    margin-bottom: 10px;
+}
+.tcaf h1{
+    font-size: 28px;
+}
+.pcaf{
+    margin-bottom: 10px;
 
+}
+.audio13{
+    width: 290px !important;
+justify-content: left;    background-color: #000018;
 
-@media(max-width:768px) {
-
+}
+.pcaf p{
+    font-size: 14px;
+}
+    /**/
     section {
         padding: 100px 100px !important;
     }
@@ -978,10 +1086,13 @@ audio::-webkit-media-controls-play-button {
     width: 400px !important;
     height: 100px !important;
 }
+#tre{
+}
 .projtitle{
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    background-color: #000016;
     gap: 5px;
 }
 button{
@@ -992,6 +1103,7 @@ padding: 7px 0;}
 .fixaudiocard{
     width: 0px;
 }
+
 .prog11.tre{
     display: flex;
     justify-content: center !important;
@@ -1012,8 +1124,8 @@ padding: 7px 0;}
     align-items: center;
 }
     .prog11 {
-        height: 400px !important;
-        width: 300px !important;
+        height: 440px !important;
+        width: 360px !important;
     }
     .prog11 .projinfo .projtitle{
         display: flex;
@@ -1032,7 +1144,7 @@ padding: 7px 0;}
     
     
     .prog11 .projinfo p {
-        max-width: 200px;
+        max-width: 270px;
         font-size: 14px !important;
         color: #fff;
         filter: drop-shadow(2px 2px 2px black);
@@ -1152,7 +1264,7 @@ padding: 7px 0;}
 
     .eminfo {
 
-        max-width: 300px !important;
+        max-width: 350px !important;
     }
 
     .main img {

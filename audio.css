@@ -128,7 +128,7 @@ transition: .3s linear;
     background: rgb(105, 105, 170,.1);
     margin: 0px 15px 0px 10px;
 }
- .master_play .bar .bar3 {
+.master_play .bar .bar3, .bar2 ,.master_play .bar .bar4 ,.master_play .bar .bar5 ,.master_play .bar .bar6 ,.master_play .bar .bar7 ,.master_play .bar .bar8 ,.master_play .bar .bar9 {
    position: absolute;
    background: #36e2ec;
    width: 0%;
@@ -157,7 +157,7 @@ transition: .3s linear;
    top: -6px;
   box-shadow: inset 0px 0px 3px #36e2ec;
 }
- .master_play .bar .dot1 ,.dot2,.dot3,.dot4,.dot5,.dot6,.dot7,.dot8 {
+ .master_play .bar .dot1 ,.dot2,.dot3,.dot4,.dot5,.dot6,.dot7,.dot8,.dot9 {
     position: absolute;
     width: 5px;
     height: 5px;
@@ -167,7 +167,7 @@ transition: .3s linear;
     top: -1px;
     transition: 1s linear;
  }
-  .master_play .bar .dot1::before , .dot2::before , .dot3::before, .dot4::before, .dot5::before, .dot6::before, .dot7::before, .dot8::before {
+  .master_play .bar .dot1::before , .dot2::before , .dot3::before, .dot4::before, .dot5::before, .dot6::before, .dot7::before, .dot8::before, .dot9::before {
      content: '';
     position: absolute;
     width: 15px;
@@ -213,7 +213,7 @@ left: -35px;
     opacity: 0;
  }
 
-  .master_play .vol .vol_bar,.vol_bar1,.vol_bar2,.vol_bar3,.vol_bar4,.vol_bar5,.vol_bar6{
+  .master_play .vol .vol_bar,.vol_bar1,.vol_bar2,.vol_bar3,.vol_bar4,.vol_bar5,.vol_bar6,.vol_bar7,.vol_bar8{
     position: absolute;
     background: #36e2ec;
     width: 0%;

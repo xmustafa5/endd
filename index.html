@@ -1,451 +1,517 @@
 <!DOCTYPE html>
 
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>audio</title>
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" /> 
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
-    <link rel="stylesheet" href="audio.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="audio.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <button id="btn" class="btn">
-        <i class="fa-solid fa-bars"></i>
-        <!-- <i class="fa-solid fa-xmark"></i> -->
+      <i class="fa-solid fa-bars"></i>
+      <!-- <i class="fa-solid fa-xmark"></i> -->
     </button>
-   
+
     <header class="header" id="header">
-         
-        <nav class="navigation" id="noo">
-            <div class="nav">
-                <ul id="mune">
-                    <li><a   class="aa" href="#header" id="a1">home</a></li>
-                    <li> <a  class="aa"  href="#Emergence" id="a2"> Department Emergence</a></li>
-                    <li> <a  class="aa"  href="#projects1" id="a3">the branch</a></li>
-                    <li> <a  class="aa"  href="#projects" id="a4">the cafeteria</a></li>
-                    <li> <a  class="aa"  href="#projects" id="a5">the Laboratory</a></li>
-                </ul>
-                <div class="animation  start-home"></div>
-
-            </div>
-            <div class="image " data-aos="fade-right" data-aos-duration="1900">
-                <img src="image/cslogo.png" alt="logo" width="70px">
-            </div>
-
-        </nav>
-     </header>
-     
-        <div class="main" id="home">
-          
-            <div>
-                <div class="fixmusic">
-                <div class="master_play">
-                    <div class="fixwave">
-                        
-                    <div class="wave">
-                        
-                        <div class="wave1"></div>
-                        <div class="wave1"></div>
-                        <div class="wave1"></div>
-                    </div>
-                    </div>
-                   
-                    <div class="icon">
-                        <i class="bi bi-play-fill" id="masterPlay"></i>
-                    </div>
-                    
-                    <span id="currentStart">0:00</span>
-                    <!-- الصوا -->
-                    <div class="bar"> <!-- bar class same -->
-                        <input type="range" id="seek" min="0" value="0" max="100">
-                        <div class="bar2" id="bar2"></div> <!-- dot2 class same -->
-                        <div class="dot" ></div>
-                    </div>
-                    <span id="currentEnd">0:00</span>
-                    <div class="vol"> <!-- vol class same -->
-                        <i class="bi bi-volume-down-fill" id="vol_icon"></i>
-                        <input type="range" id="vol" min="0" value="30" max="100">
-                        <div class="vol_bar"></div>
-                        <div class="dot"  id="vol_dot"></div>  <!-- dot class same -->
-
-                    </div>
-                </div>
-            </div>
-                <h2 data-aos="fade-right" data-aos-duration="1300" data-aos-once="true"> <br> <span>audio guide</span>
-                </h2>
-                <h3 data-aos="fade-left" data-aos-duration="1300">for the department of computer science</h3>
-                
-                <div class="grMove1" >
-                    <!-- <img src="qrcode.png" alt=""> -->
-                    </div>
-                
-            </div>
-
-
+      <nav class="navigation" id="noo">
+        <div class="nav">
+          <ul id="mune">
+            <li><a class="aa" href="#header" id="a1">home</a></li>
+            <li>
+              <a class="aa" href="#Emergence" id="a2"> Department Emergence</a>
+            </li>
+            <li><a class="aa" href="#projects1" id="a3">the branch</a></li>
+            <li><a class="aa" href="#cafeteria" id="a4">the cafeteria</a></li>
+            <li><a class="aa" href="#projects" id="a5">the Laboratory</a></li>
+          </ul>
+          <div class="animation start-home"></div>
         </div>
-   
-    <div class="grMove" >
-        <!-- <img src="qrcode.png" alt=""> -->
+        <div class="image" data-aos="fade-right" data-aos-duration="1900">
+          <img src="image/cslogo.png" alt="logo" width="70px" />
         </div>
-    <div class="Emergence" id="Emergence">
-        <div class="rr">
-            <div class="emg">
-                <div class="emg2">
-                    <div class="emg1">
-                        <!-- <img src="image/ew.png" alt="er"> -->
-                    
-                    </div>
-                </div>
-                <div class="eminfo">
-                    <h2>
-                        Emergence
-                    </h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quam voluptates consectetur quo
-                        ullam.
-                        Explicabo, perspiciatis harum. Repellat, aut itaque.
-                        ullam.
-                        Explicabo, perspiciatis harum. Repellat, aut itaque.ullam.
-                        Explicabo, perspiciatis harum. Repellat, aut itaque.
-                        Explicabo, perspiciatis harum. Repellat, aut itaque.
+      </nav>
+    </header>
 
-                    </p>
-                    <div class="emimage">
-                            <!-- <img src="qrcode.png" alt="aa"> -->
-                        
-                            <div class="fexaudio onwi1"  >
-                                <div class="audio1">
-                                    <div class="master_play" >
-                                        <div class="wave ">
-                                            <div class="wave1 "></div>
-                                            <div class="wave1"></div>
-                                            <div class="wave1"></div>
-                                            
-                                        </div>
-                                        <div class="icon">
-                                            <i class="bi bi-play-fill" id="masterPlay1"></i>
-                                        </div>
-                                        
-                                        <span id="currentStart1">0:00</span>
-                                        <!-- الصوا -->
-                                        <div class="bar">
-                                            <input type="range" id="seek1" min="0" value="0" max="100">
-                                            <div class="bar2" id="bar3"></div>
-                                            <div class="dot1" id="dot1"></div>
-                                        </div>
-                                        <span id="currentEnd1">0:00</span>
-                                        <div class="vol">
-                                            <i class="bi bi-volume-down-fill" id="vol_icon1"></i>
-                                            <input type="range" id="vol1" min="0" value="30" max="100">
-                                            <div class="vol_bar1"></div>
-                                            <div class="dot" id="vol_dot1"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                               
-                        </div>
-
-                        <div class="grMove2" >
-                        <!-- <img src="qrcode.png" alt=""> -->
-                        
-                        </div>
-                    </div>
-                    
-                </div>
+    <div class="main" id="home">
+      <div>
+        <div class="fixmusic">
+          <div class="master_play">
+            <div class="fixwave">
+              <div class="wave">
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+              </div>
             </div>
+
+            <div class="icon">
+              <i class="bi bi-play-fill" id="masterPlay"></i>
+            </div>
+
+            <span id="currentStart">0:00</span>
+            <!-- الصوا -->
+            <div class="bar">
+              <!-- bar class same -->
+              <input type="range" id="seek" min="0" value="0" max="100" />
+              <div class="bar2" id="bar2"></div>
+              <!-- dot2 class same -->
+              <div class="dot"></div>
+            </div>
+            <span id="currentEnd">0:00</span>
+            <div class="vol">
+              <!-- vol class same -->
+              <i class="bi bi-volume-down-fill" id="vol_icon"></i>
+              <input type="range" id="vol" min="0" value="30" max="100" />
+              <div class="vol_bar"></div>
+              <div class="dot" id="vol_dot"></div>
+              <!-- dot class same -->
+            </div>
+          </div>
         </div>
+        <h2 data-aos="fade-right" data-aos-duration="1300" data-aos-once="true">
+          <br />
+          <span>audio guide</span>
+        </h2>
+        <h3 data-aos="fade-left" data-aos-duration="1300">
+          for the department of computer science
+        </h3>
+        <div class="flexmove">
+          <div class="grMove1">
+            <!-- <img src="qrcode.png" alt=""> -->
+          </div>
+        </div>
+      </div>
     </div>
-     <!-- branch  -->
-     
-     <section class="pro" id="projects1">
-        <h2 class="title">Branches</h2>
-        
-        <div class="content"  >
-            <div class="projcard  " id="space1" >
-                <div class="projinfo">
-                    <strong class="projtitle">
-                        <h3 class="tre" >
-                            software
-                        </h3>
-                        <div class="fixaudiocard">
-                        <div class="audio7">
-                            <div class="master_play" >
-                                <div class="icon">
-                                    <i class="bi bi-play-fill" id="masterPlay2"></i>
-                                </div>
-                                
-                                <span id="currentStart2">0:00</span>
-                                <!-- الصوا -->
-                                <div class="bar">
-                                    <input type="range" id="seek2" min="0" value="0" max="100">
-                                    <div class="bar3" id="bar4"></div>
-                                    <div class="dot2" id="dot2"></div>
-                                </div>
-                                <span id="currentEnd2">0:00</span>
-                                <div class="vol">
-                                    <i class="bi bi-volume-down-fill" id="vol_icon2"></i>
-                                    <input type="range" id="vol2" min="0" value="30" max="100">
-                                    <div class="vol_bar2"></div>
-                                    <div class="dot" id="vol_dot2"></div>
-                                </div>
-                            </div>
-                        </div>
-                          </div>  
-                    <p class="pp1">وعادة ما يستخدم هذا المصطلح خطأ باعتباره مرادفا لنظم المعلومات المحوسبة، والتي هي ليست سوى تقنية معلوماتية وعنصرًا من عناصر نظام المعلومات. وتعتبر نظم المعلومات المحوسبة جزء من دراسة تقنية المعلومات. وبالرغم من هذا فإنه يجب التمييز بينهم وبين نظم المعلومات التي تشملهم.</p>
-                    <a href="#prog1 ">
-                    <button id="prog1"   >
-                       
-                                <span class="er">
-                            </span> 
-                       show more
-                            </button>
-                        </a>
-                        <div class="grMove3 prog1" id="grMove3"  >
-                            <!-- <img src="qrcode.png" alt=""> -->
-                            </div>
-                        </strong>
-                        
+
+    <div class="Emergence" id="Emergence">
+      <div class="rr">
+        <div class="emg">
+          <div class="emg2">
+            <div class="emg1">
+              <!-- <img src="image/ew.png" alt="er"> -->
+            </div>
+          </div>
+          <div class="eminfo">
+            <h1>Department Emergence</h1>
+            <p>
+              The Department was established in 1983 to keep up with the
+              developments in the field of computer sciences and use them in the
+              applied field and to prepare the students to be a specialized
+              staff to serve our beloved country in the sectors that needs this
+              specialization
+            </p>
+            <div class="emimage">
+              <!-- <img src="qrcode.png" alt="aa"> -->
+
+              <div class="fexaudio onwi1">
+                <div class="audio1">
+                  <div class="master_play">
+                    <div class="wave">
+                      <div class="wave1"></div>
+                      <div class="wave1"></div>
+                      <div class="wave1"></div>
+                    </div>
+                    <div class="icon">
+                      <i class="bi bi-play-fill" id="masterPlay1"></i>
+                    </div>
+
+                    <span id="currentStart1">0:00</span>
+                    <!-- الصوا -->
+                    <div class="bar">
+                      <input
+                        type="range"
+                        id="seek1"
+                        min="0"
+                        value="0"
+                        max="100"
+                      />
+                      <div class="bar2" id="bar3"></div>
+                      <div class="dot1" id="dot1"></div>
+                    </div>
+                    <span id="currentEnd1">0:00</span>
+                    <div class="vol">
+                      <i class="bi bi-volume-down-fill" id="vol_icon1"></i>
+                      <input
+                        type="range"
+                        id="vol1"
+                        min="0"
+                        value="30"
+                        max="100"
+                      />
+                      <div class="vol_bar1"></div>
+                      <div class="dot" id="vol_dot1"></div>
+                    </div>
+                  </div>
                 </div>
-            </div> 
-            <div class="projcard  " id="space2" >
-                <div class="projinfo">
-                    <strong class="projtitle">
-                        <h3 class="tre" >
-                            information system
-                        </h3>
-                        <div class="fixaudiocard">
-                            <div class="audio8">
-                                <div class="master_play" >
-                                    <div class="icon">
-                                        <i class="bi bi-play-fill" id="masterPlay3"></i>
-                                    </div>
-                                    
-                                    <span id="currentStart3">0:00</span>
-                                    <!-- الصوا -->
-                                    <div class="bar">
-                                        <input type="range" id="seek3" min="0" value="0" max="100">
-                                        <div class="bar4" id="bar5"></div>
-                                        <div class="dot3" id="dot3"></div>
-                                    </div>
-                                    <span id="currentEnd2">0:00</span>
-                                    <div class="vol">
-                                        <i class="bi bi-volume-down-fill" id="vol_icon3"></i>
-                                        <input type="range" id="vol3" min="0" value="30" max="100">
-                                        <div class="vol_bar3"></div>
-                                        <div class="dot" id="vol_dot3"></div>
-                                    </div>
-                                </div>
-                            </div>
-                              </div>  
+              </div>
 
-                            <p class="pp2">وعادة ما يستخدم هذا المصطلح خطأ باعتباره مرادفا لنظم المعلومات المحوسبة، والتي هي ليست سوى تقنية معلوماتية وعنصرًا من عناصر نظام المعلومات. وتعتبر نظم المعلومات المحوسبة جزء من دراسة تقنية المعلومات. وبالرغم من هذا فإنه يجب التمييز بينهم وبين نظم المعلومات التي تشملهم.</p>
-                    <a href="#prog2 ">
-                        
-                            <button id="prog2"  >
-                                <span class="er">
-                            </span> 
-                                show more
-                            </button>
-                    </a>
-                    <div class="grMove3 prog1" id="grMove4" >
-                        <!-- <img src="qrcode.png" alt=""> -->
-                        </div>
-                    </strong>
-                </div>
-            </div> 
-            <div class="projcard  " id="space3" >
-                <div class="projinfo">
-                    <strong class="projtitle">
-                        <h3 class="tre" >
-                            artificial intelligence                        </h3>
-                        <div class="fixaudiocard">
-                            <div class="audio9">
-                                <div class="master_play" >
-                                    <div class="icon">
-                                        <i class="bi bi-play-fill" id="masterPlay4"></i>
-                                    </div>
-                                    
-                                    <span id="currentStart4">0:00</span>
-                                    <!-- الصوا -->
-                                    <div class="bar">
-                                        <input type="range" id="seek4" min="0" value="0" max="100">
-                                        <div class="bar5" id="bar6"></div>
-                                        <div class="dot4" id="dot4"></div>
-                                    </div>
-                                    <span id="currentEnd2">0:00</span>
-                                    <div class="vol">
-                                        <i class="bi bi-volume-down-fill" id="vol_icon4"></i>
-                                        <input type="range" id="vol4" min="0" value="30" max="100">
-                                        <div class="vol_bar4"></div>
-                                        <div class="dot" id="vol_dot4"></div>
-                                    </div>
-                                </div>
-                            </div>
-                              </div>  
-                            <p class="pp3">وعادة ما يستخدم هذا المصطلح خطأ باعتباره مرادفا لنظم المعلومات المحوسبة، والتي هي ليست سوى تقنية معلوماتية وعنصرًا من عناصر نظام المعلومات. وتعتبر نظم المعلومات المحوسبة جزء من دراسة تقنية المعلومات. وبالرغم من هذا فإنه يجب التمييز بينهم وبين نظم المعلومات التي تشملهم.</p>
-                            <a href="#prog3 ">
-                            <button id="prog3"  >
-                                <span class="er">
-                            </span> 
-                                show more
-                            </button>
-                            </a>
-                            <div class="grMove3 prog1" id="grMove5"  >
-                                <!-- <img src="qrcode.png" alt=""> -->
-                                </div>
-                    </strong>
-                </div>
-            </div> 
-            <div class="projcard  " id="space4" >
-
-                <div class="projinfo">
-                    <strong class="projtitle">
-                        <h3 class="tre" >
-                            computer security                        </h3>
-                        <div class="fixaudiocard">
-                            <div class="audio10">
-                                <div class="master_play" >
-                                    <div class="icon">
-                                        <i class="bi bi-play-fill" id="masterPlay5"></i>
-                                    </div>
-                                    
-                                    <span id="currentStart5">0:00</span>
-                                    <!-- الصوا -->
-                                    <div class="bar">
-                                        <input type="range" id="seek5" min="0" value="0" max="100">
-                                        <div class="bar6" id="bar7"></div>
-                                        <div class="dot5" id="dot5"></div>
-                                    </div>
-                                    <span id="currentEnd5">0:00</span>
-                                    <div class="vol">
-                                        <i class="bi bi-volume-down-fill" id="vol_icon5"></i>
-                                        <input type="range" id="vol5" min="0" value="30" max="100">
-                                        <div class="vol_bar5"></div>
-                                        <div class="dot" id="vol_dot5"></div>
-                                    </div>
-                                </div>
-                            </div>
-                              </div> 
-
-                            <p class="pp4">وعادة ما يستخدم هذا المصطلح خطأ باعتباره مرادفا لنظم المعلومات المحوسبة، والتي هي ليست سوى تقنية معلوماتية وعنصرًا من عناصر نظام المعلومات. وتعتبر نظم المعلومات المحوسبة جزء من دراسة تقنية المعلومات. وبالرغم من هذا فإنه يجب التمييز بينهم وبين نظم المعلومات التي تشملهم.</p>
-                            <a href="#prog4 ">
-                            <button id="prog4"  >
-                                <span class="er">
-                            </span> 
-                                show more
-                            </button>
-
-                            </a>
-                            <div class="grMove3 prog1" id="grMove6"  >
-                                <!-- <img src="qrcode.png" alt=""> -->
-                                </div>
-                    </strong>
-                </div>
-            </div> 
-            <div class="projcard  " id="space5" >
-                <div class="projinfo">
-                    <strong class="projtitle">
-                        <h3 class="tre" >
-                            networks
-                        </h3>
-                        <div class="fixaudiocard">
-                            <div class="audio11">
-                                <div class="master_play" >
-                                    <div class="icon">
-                                        <i class="bi bi-play-fill" id="masterPlay6"></i>
-                                    </div>
-                                    
-                                    <span id="currentStart6">0:00</span>
-                                    <!-- الصوا -->
-                                    <div class="bar">
-                                        <input type="range" id="seek6" min="0" value="0" max="100">
-                                        <div class="bar7" id="bar8"></div>
-                                        <div class="dot6" id="dot6"></div>
-                                    </div>
-                                    <span id="currentEnd6">0:00</span>
-                                    <div class="vol">
-                                        <i class="bi bi-volume-down-fill" id="vol_icon6"></i>
-                                        <input type="range" id="vol6" min="0" value="30" max="100">
-                                        <div class="vol_bar6"></div>
-                                        <div class="dot" id="vol_dot6"></div>
-                                    </div>
-                                </div>
-                            </div>
-                              </div>
-                            <p class="pp5">وعادة ما يستخدم هذا المصطلح خطأ باعتباره مرادفا لنظم المعلومات المحوسبة، والتي هي ليست سوى تقنية معلوماتية وعنصرًا من عناصر نظام المعلومات. وتعتبر نظم المعلومات المحوسبة جزء من دراسة تقنية المعلومات. وبالرغم من هذا فإنه يجب التمييز بينهم وبين نظم المعلومات التي تشملهم.</p>
-                            <a href="#prog5 ">
-                            <button id="prog5"  >
-                                <span class="er">
-                            </span> 
-                                show more
-                            </button></a>
-                            <div class="grMove3 prog1" id="grMove7"  >
-                                <!-- <img src="qrcode.png" alt=""> -->
-                                </div>
-                    </strong>
-                </div>
-            </div> 
-            <div class="projcard  " id="space6" >
-                <div class="projinfo">
-                    <strong class="projtitle">
-                        <h3 class="tre" >
-                            multimedia
-                        </h3>
-                        <div class="fixaudiocard">
-                            <div class="audio12">
-                                <div class="master_play" >
-                                    <div class="icon">
-                                        <i class="bi bi-play-fill" id="masterPlay7"></i>
-                                    </div>
-                                    
-                                    <span id="currentStart7">0:00</span>
-                                    <!-- الصوا -->
-                                    <div class="bar">
-                                        <input type="range" id="seek7" min="0" value="0" max="100">
-                                        <div class="bar8" id="bar9"></div>
-                                        <div class="dot7" id="dot7"></div>
-                                    </div>
-                                    <span id="currentEnd7">0:00</span>
-                                    <div class="vol">
-                                        <i class="bi bi-volume-down-fill" id="vol_icon7"></i>
-                                        <input type="range" id="vol6" min="0" value="30" max="100">
-                                        <div class="vol_bar7"></div>
-                                        <div class="dot" id="vol_dot7"></div>
-                                    </div>
-                                </div>
-                            </div>
-                              </div>
-
-
-
-                                                 <p class="pp6">وعادة ما يستخدم هذا المصطلح خطأ باعتباره مرادفا لنظم المعلومات المحوسبة، والتي هي ليست سوى تقنية معلوماتية وعنصرًا من عناصر نظام المعلومات. وتعتبر نظم المعلومات المحوسبة جزء من دراسة تقنية المعلومات. وبالرغم من هذا فإنه يجب التمييز بينهم وبين نظم المعلومات التي تشملهم.</p>
-                                                 <a href="#prog6 ">
-                                                 <button id="prog6"  >
-
-                                <span class="er">
-                            </span> 
-                                show more
-                            </button></a>
-                            <div class="grMove3 prog1" id="grMove8"  >
-                                <!-- <img src="qrcode.png" alt=""> -->
-                                </div>
-                    </strong>
-                </div>
-            </div> 
-           
-
-
+              <div class="grMove2">
+                <!-- <img src="qrcode.png" alt=""> -->
+              </div>
+            </div>
+          </div>
         </div>
-   
-     </section>
-    
-     <!--  -->
+      </div>
+    </div>
+    <!-- branch  -->
+
+    <section class="pro" id="projects1">
+      <h2 class="title">The Branches</h2>
+
+      <div class="content">
+        <div class="projcard" id="space1">
+          <div class="projinfo">
+            <strong class="projtitle">
+              <h3 class="tre">software</h3>
+              <div class="fixaudiocard">
+                <div class="audio7">
+                  <div class="master_play">
+                    <div class="icon">
+                      <i class="bi bi-play-fill" id="masterPlay2"></i>
+                    </div>
+
+                    <span id="currentStart2">0:00</span>
+                    <!-- الصوا -->
+                    <div class="bar">
+                      <input
+                        type="range"
+                        id="seek2"
+                        min="0"
+                        value="0"
+                        max="100"
+                      />
+                      <div class="bar3" id="bar4"></div>
+                      <div class="dot2" id="dot2"></div>
+                    </div>
+                    <span id="currentEnd2">0:00</span>
+                    <div class="vol">
+                      <i class="bi bi-volume-down-fill" id="vol_icon2"></i>
+                      <input
+                        type="range"
+                        id="vol2"
+                        min="0"
+                        value="30"
+                        max="100"
+                      />
+                      <div class="vol_bar2"></div>
+                      <div class="dot" id="vol_dot2"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="pp1">The software branch was established since the department establishment in 1983. the branch's graduates work in the field of understanding and developing and designing programs 
+              </p>
+              <a href="#prog1 ">
+                <button id="prog1">
+                  <span class="er"> </span>
+                  show more
+                </button>
+              </a>
+              <div class="flexmove">
+              <div class="grMove3 prog1" id="grMove3">
+                <!-- <img src="qrcode.png" alt=""> -->
+              </div></div>
+            </strong>
+          </div>
+        </div>
+        <div class="projcard" id="space2">
+          <div class="projinfo">
+            <strong class="projtitle">
+              <h3 class="tre" id="tre">information system  </h3>
+              <div class="fixaudiocard">
+                <div class="audio8">
+                  <div class="master_play">
+                    <div class="icon">
+                      <i class="bi bi-play-fill" id="masterPlay3"></i>
+                    </div>
+
+                    <span id="currentStart3">0:00</span>
+                    <!-- الصوا -->
+                    <div class="bar">
+                      <input
+                        type="range"
+                        id="seek3"
+                        min="0"
+                        value="0"
+                        max="100"
+                      />
+                      <div class="bar4" id="bar5"></div>
+                      <div class="dot3" id="dot3"></div>
+                    </div>
+                    <span id="currentEnd2">0:00</span>
+                    <div class="vol">
+                      <i class="bi bi-volume-down-fill" id="vol_icon3"></i>
+                      <input
+                        type="range"
+                        id="vol3"
+                        min="0"
+                        value="30"
+                        max="100"
+                      />
+                      <div class="vol_bar3"></div>
+                      <div class="dot" id="vol_dot3"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <p class="pp2"> he Branch was established in 1997-1998 the branch's graduates work in the field of system information building that works on archiving, assembling and sorting data then displays them accurately as information in the suitable time    </p>
+              <a href="#prog2 ">
+                <button id="prog2">
+                  <span class="er"> </span>
+                  show more
+                </button>
+              </a>
+              <div class="flexmove">
+              
+              <div class="grMove3 prog1" id="grMove4">
+                <!-- <img src="qrcode.png" alt=""> -->
+              </div></div>
+            </strong>
+          </div>
+        </div>
+        <div class="projcard" id="space3">
+          <div class="projinfo">
+            <strong class="projtitle">
+              <h3 class="tre">artificial intelligence</h3>
+              <div class="fixaudiocard">
+                <div class="audio9">
+                  <div class="master_play">
+                    <div class="icon">
+                      <i class="bi bi-play-fill" id="masterPlay4"></i>
+                    </div>
+
+                    <span id="currentStart4">0:00</span>
+                    <!-- الصوا -->
+                    <div class="bar">
+                      <input
+                        type="range"
+                        id="seek4"
+                        min="0"
+                        value="0"
+                        max="100"
+                      />
+                      <div class="bar5" id="bar6"></div>
+                      <div class="dot4" id="dot4"></div>
+                    </div>
+                    <span id="currentEnd2">0:00</span>
+                    <div class="vol">
+                      <i class="bi bi-volume-down-fill" id="vol_icon4"></i>
+                      <input
+                        type="range"
+                        id="vol4"
+                        min="0"
+                        value="30"
+                        max="100"
+                      />
+                      <div class="vol_bar4"></div>
+                      <div class="dot" id="vol_dot4"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="pp3">he branch was established in 2002-2003 and the branch's graduates work in the field of designing and developing intelligent systems and programs also he/she will have the experience in the methods of knowledge representations
+              </p>
+              <a href="#prog3 ">
+                <button id="prog3">
+                  <span class="er"> </span>
+                  show more
+                </button>
+              </a>
+              <div class="grMove3 prog1" id="grMove5">
+                <!-- <img src="qrcode.png" alt=""> -->
+              </div>
+            </strong>
+          </div>
+        </div>
+        <div class="projcard" id="space4">
+          <div class="projinfo">
+            <strong class="projtitle">
+              <h3 class="tre">computer security</h3>
+              <div class="fixaudiocard">
+                <div class="audio10">
+                  <div class="master_play">
+                    <div class="icon">
+                      <i class="bi bi-play-fill" id="masterPlay5"></i>
+                    </div>
+
+                    <span id="currentStart5">0:00</span>
+                    <!-- الصوا -->
+                    <div class="bar">
+                      <input
+                        type="range"
+                        id="seek5"
+                        min="0"
+                        value="0"
+                        max="100"
+                      />
+                      <div class="bar6" id="bar7"></div>
+                      <div class="dot5" id="dot5"></div>
+                    </div>
+                    <span id="currentEnd5">0:00</span>
+                    <div class="vol">
+                      <i class="bi bi-volume-down-fill" id="vol_icon5"></i>
+                      <input
+                        type="range"
+                        id="vol5"
+                        min="0"
+                        value="30"
+                        max="100"
+                      />
+                      <div class="vol_bar5"></div>
+                      <div class="dot" id="vol_dot5"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <p class="pp4">The branch was established in 2004-2005 the branch's graduates work in the field of understanding and developing programs and secure systems and develop security methods for data and data warehouse from unauthorized access and altering
+              </p>
+              <a href="#prog4 ">
+                <button id="prog4">
+                  <span class="er"> </span>
+                  show more
+                </button>
+              </a>
+              <div class="grMove3 prog1" id="grMove6">
+                <!-- <img src="qrcode.png" alt=""> -->
+              </div>
+            </strong>
+          </div>
+        </div>
+        <div class="projcard" id="space5">
+          <div class="projinfo">
+            <strong class="projtitle">
+              <h3 class="tre">networks</h3>
+              <div class="fixaudiocard">
+                <div class="audio11">
+                  <div class="master_play">
+                    <div class="icon">
+                      <i class="bi bi-play-fill" id="masterPlay6"></i>
+                    </div>
+
+                    <span id="currentStart6">0:00</span>
+                    <!-- الصوا -->
+                    <div class="bar">
+                      <input
+                        type="range"
+                        id="seek6"
+                        min="0"
+                        value="0"
+                        max="100"
+                      />
+                      <div class="bar7" id="bar8"></div>
+                      <div class="dot6" id="dot6"></div>
+                    </div>
+                    <span id="currentEnd6">0:00</span>
+                    <div class="vol">
+                      <i class="bi bi-volume-down-fill" id="vol_icon6"></i>
+                      <input
+                        type="range"
+                        id="vol6"
+                        min="0"
+                        value="30"
+                        max="100"
+                      />
+                      <div class="vol_bar6"></div>
+                      <div class="dot" id="vol_dot6"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="pp5">The branch was established in 2011-2012 within the branches of computer sciences department, the branch's graduates work in the field of programming networks and internet applications
+              </p>
+              <a href="#prog5 ">
+                <button id="prog5">
+                  <span class="er"> </span>
+                  show more
+                </button></a
+              >
+              <div class="grMove3 prog1" id="grMove7">
+                <!-- <img src="qrcode.png" alt=""> -->
+              </div>
+            </strong>
+          </div>
+        </div>
+        <div class="projcard" id="space6">
+          <div class="projinfo">
+            <strong class="projtitle">
+              <h3 class="tre">multimedia</h3>
+              <div class="fixaudiocard">
+                <div class="audio12">
+                  <div class="master_play">
+                    <div class="icon">
+                      <i class="bi bi-play-fill" id="masterPlay7"></i>
+                    </div>
+
+                    <span id="currentStart7">0:00</span>
+                    <!-- الصوا -->
+                    <div class="bar">
+                      <input
+                        type="range"
+                        id="seek7"
+                        min="0"
+                        value="0"
+                        max="100"
+                      />
+                      <div class="bar8" id="bar9"></div>
+                      <div class="dot7" id="dot7"></div>
+                    </div>
+                    <span id="currentEnd7">0:00</span>
+                    <div class="vol">
+                      <i class="bi bi-volume-down-fill" id="vol_icon7"></i>
+                      <input
+                        type="range"
+                        id="vol7"
+                        min="0"
+                        value="30"
+                        max="100"
+                      />
+                      <div class="vol_bar7"></div>
+                      <div class="dot" id="vol_dot7"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <p class="pp6">The branch was established in 2012-2013 within the branches of computer sciences department, the branch's graduates work in the field of multimedia, (Graphics, Audio, Video) in addition of learning the basic programming of multimedia applications
+              </p>
+              <a href="#prog6 ">
+                <button id="prog6">
+                  <span class="er"> </span>
+                  show more
+                </button></a
+              >
+              <div class="grMove3 prog1" id="grMove8">
+                <!-- <img src="qrcode.png" alt=""> -->
+              </div>
+            </strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
     <!-- <div class="Laboratory">
         <div class="labfix">
             <div class="eew" >
@@ -512,24 +578,80 @@
             
         </div>
     </div> -->
-    <div class="cafeteria">
-        <img src="mustafabas.jpg" alt="">
+    <div class="cafeteria " id="cafeteria">
+        <div class="cafcol">
+        <div class="container_img">
+            <div class="canterimg">
+                <img src="caf1.png" class="canterimgg" alt="" >
+            </div>
+        </div>
+        <div class="ds">
+            <div class="downslide">
+                <div class="tcaf">
+                   <h1>the cafeteria</h1>
+
+                </div>
+                <div class="pcaf">
+            <p>The branch was established in 2012-2013 within the branches of computer sciences department, the branch's graduates work in the field of multimedia, (Graphics, Audio, Video) in addition of learning the basic programming of multimedia applications</p>
+            </div><div class="fixaudiocard1">
+                <div class="audio13">
+                  <div class="master_play">
+                    <div class="icon">
+                      <i class="bi bi-play-fill" id="masterPlay8"></i>
+                    </div>
+
+                    <span id="currentStart8">0:00</span>
+                    <!-- الصوا -->
+                    <div class="bar">
+                      <input
+                        type="range"
+                        id="seek8"
+                        min="0"
+                        value="0"
+                        max="100"
+                      />
+                      <div class="bar9" id="bar10"></div>
+                      <div class="dot8" id="dot8"></div>
+                    </div>
+                    <span id="currentEnd8">0:00</span>
+                    <div class="vol">
+                      <i class="bi bi-volume-down-fill" id="vol_icon8"></i>
+                      <input
+                        type="range"
+                        id="vol8"
+                        min="0"
+                        value="30"
+                        max="100"
+                      />
+                      <div class="vol_bar8"></div>
+                      <div class="dot" id="vol_dot8"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
     </div>
-    <footer class="footer">
-        
-    </footer>
+    </div>
+
+
+
+    <footer class="footer"></footer>
     <!--   animt card -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init({
-            once: true,
-        });
+      AOS.init({
+        once: true,
+      });
     </script>
     <!--  slide animt -->
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
-  
-    <script src="script.js"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
 
+    <script src="script.js"></script>
+  </body>
 </html>
