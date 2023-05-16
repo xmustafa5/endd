@@ -1019,7 +1019,7 @@ height: 200px;
 }
 .audio13{
     width: 290px !important;
-justify-content: left;    background-color: #000018;
+justify-content: left;   
 
 }
 .pcaf p{
@@ -1091,7 +1091,6 @@ justify-content: left;    background-color: #000018;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    background-color: #000016;
     gap: 5px;
 }
 button{
