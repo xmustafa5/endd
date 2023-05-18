@@ -29,7 +29,7 @@
       window.scrollTo(1800,1800)
       change.prog66.call()
     } else if(window.innerWidth < 600 && window.location.href.includes('#prog1')){
-      window.scrollTo(1200,1200)
+      window.scrollTo(1100,1100)
       change.prog11.call()
     } else if(window.location.href.includes('#prog2') && window.innerWidth < 600){
       window.scrollTo(1300,1300)
