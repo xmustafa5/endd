@@ -9,11 +9,11 @@
     
     if (window.location.href.includes('#prog1') && window.innerWidth > 600
     ){
-      window.scrollTo(1500,1500)
+      window.scrollTo(1350,1350)
       change.prog11.call()
     }else if(window.location.href.includes('#prog2') && window.innerWidth > 600){
            change.prog22.call() 
-          window.scrollTo(1500,1500)
+          window.scrollTo(1400,1400)
     } else if(window.location.href.includes('#prog3') && window.innerWidth > 600){
       window.scrollTo(1700,1700)
       change.prog33.call()
