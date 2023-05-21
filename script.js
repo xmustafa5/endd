@@ -14,9 +14,7 @@
       
     } else if(window.location.href.includes('#Emergence') && window.innerWidth > 600){
       window.scrollTo(0,750)
-    } else if(window.location.href.includes('') && window.innerWidth > 600){
-      window.scrollTo(0,0)
-    }else if(window.location.href.includes('#prog2') && window.innerWidth > 600){
+    }  else if(window.location.href.includes('#prog2') && window.innerWidth > 600){
            change.prog22.call() 
           window.scrollTo(1500,1500)
     } else if(window.location.href.includes('#prog3') && window.innerWidth > 600){
@@ -974,15 +972,15 @@ let pp6 = document.querySelector('.pp6')
 
 
 
-const music = new Audio('1.mp3');
-const music2 = new Audio('vande.mp3');
-const music3 = new Audio('vande.mp3');
-const music4 = new Audio('vande.mp3');
-const music5 = new Audio('vande.mp3');
-const music6 = new Audio('vande.mp3');
-const music7 = new Audio('vande.mp3');
-const music8 = new Audio('vande.mp3');
-const music9 = new Audio('vande.mp3');
+const music = new Audio('audio/audioguide.mp3');
+const music2 = new Audio('audio/emergence.mp3');
+const music3 = new Audio('audio/software.mp3');
+const music4 = new Audio('audio/information.mp3');
+const music5 = new Audio('audio/atrfic.mp3');
+const music6 = new Audio('audio/secirty.mp3');
+const music7 = new Audio('audio/network.mp3');
+const music8 = new Audio('audio/multimedia.mp3');
+const music9 = new Audio('audio/cafteri.mp3');
 
 
 // create Array 
