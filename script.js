@@ -9,11 +9,16 @@
     
     if (window.location.href.includes('#prog1') && window.innerWidth > 600
     ){
-      window.scrollTo(1350,1350)
+      window.scrollTo(1500,1500)
       change.prog11.call()
+      
+    } else if(window.location.href.includes('#Emergence') && window.innerWidth > 600){
+      window.scrollTo(0,750)
+    } else if(window.location.href.includes('') && window.innerWidth > 600){
+      window.scrollTo(0,0)
     }else if(window.location.href.includes('#prog2') && window.innerWidth > 600){
            change.prog22.call() 
-          window.scrollTo(1400,1400)
+          window.scrollTo(1500,1500)
     } else if(window.location.href.includes('#prog3') && window.innerWidth > 600){
       window.scrollTo(1700,1700)
       change.prog33.call()
@@ -29,22 +34,29 @@
       window.scrollTo(1800,1800)
       change.prog66.call()
     } else if(window.innerWidth < 600 && window.location.href.includes('#prog1')){
-      window.scrollTo(1100,1100)
+      window.scrollTo(0,1460)
       change.prog11.call()
+    }else if(window.location.href.includes('#Emergence') && window.innerWidth < 600){
+      window.scrollTo(0,660)
     } else if(window.location.href.includes('#prog2') && window.innerWidth < 600){
-      window.scrollTo(1300,1300)
+      window.scrollTo(0,1580)
       change.prog22.call()
     } else if(window.location.href.includes('#prog3') && window.innerWidth < 600){
-      window.scrollTo(1450,1450)
+      window.scrollTo(0,1750)
       change.prog33.call()
     } else if(window.location.href.includes('#prog4') && window.innerWidth < 600){
-      window.scrollTo(1570,1570)
+      window.scrollTo(0,1850)
       change.prog44.call()
     }
     else if(window.location.href.includes('#prog5') && window.innerWidth < 600){
-      window.scrollTo(1800,1800)
+      window.scrollTo(0,1990)
       change.prog55.call()
     }
+    else if(window.location.href.includes('#prog6') && window.innerWidth < 600){
+      window.scrollTo(0,2100)
+      change.prog66.call()
+    }
+    
 
     }
    
