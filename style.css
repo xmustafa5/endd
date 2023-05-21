@@ -293,7 +293,7 @@ nav .animation {
    
     height: 180px;
     width: 180px;
-    background-image: url(qrcode.png);
+    background-image: url(qrcode/home.png);
     background-size: cover;
     background-position: center;
 
@@ -304,7 +304,7 @@ nav .animation {
     height: 160px;
     width: 160px;
     z-index: 4;
-    background-image: url(qrcode1.png);
+    background-image: url(qrcode/Emergence.png);
     background-size: cover;
     background-position: center;
 }
@@ -315,68 +315,53 @@ nav .animation {
     width: 120px;
     z-index: 4;
     /* background-color: #011c68; */
-    background-image: url(qrcode1.png);
+    background-image: url(qrcode/software.png);
     background-size: cover;
     background-position: center;
 }
 
 .grMove4{
-    position: absolute;
-    top: 1680px;
-    left: 1200px;
-    height: 180px;
-    width: 180px;
+    height: 120px;
+    width: 120px;
     z-index: 4;
     /* background-color: #011c68; */
-    background-image: url(qrcode1.png);
+    background-image: url(qrcode/informaation_system.png);
     background-size: cover;
     background-position: center;
 }
 .grMove5{
-    position: absolute;
-    top: 1910px;
-    left: 200px;
-    height: 180px;
-    width: 180px;
+    height: 120px;
+    width: 120px;
     z-index: 4;
     /* background-color: #011c68; */
-    background-image: url(qrcode1.png);
+    background-image: url(qrcode/aftric.png);
     background-size: cover;
     background-position: center;
 }
 .grMove6{
-    position: absolute;
-    top: 1910px;
-    left: 800px;
-    height: 180px;
-    width: 180px;
+    height: 120px;
+    width: 120px;
     z-index: 4;
     /* background-color: #011c68; */
-    background-image: url(qrcode1.png);
+    background-image: url(qrcode/computer_securty.png);
     background-size: cover;
     background-position: center;
 }
 .grMove7{
-    position: absolute;
-    top: 1910px;
-    left: 1200px;
-    height: 180px;
-    width: 180px;
+    height: 120px;
+    width: 120px;
     z-index: 4;
     /* background-color: #011c68; */
-    background-image: url(qrcode1.png);
+    background-image: url(qrcode/network.png);
     background-size: cover;
     background-position: center;
 }
 .grMove8{
-    position: absolute;
-    top: 2130px;
-    left: 370px;
-    height: 180px;
-    width: 180px;
+    height: 120px;
+    width: 120px;
     z-index: 4;
     /* background-color: #011c68; */
-    background-image: url(qrcode1.png);
+    background-image: url(qrcode/multimedai.png);
     background-size: cover;
     background-position: center;
 }
@@ -484,7 +469,10 @@ button:hover span {
 }
 
 .tre {
-    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     color: #fff;
     font-size: 24px;
 }
